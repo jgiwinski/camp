@@ -1,0 +1,26 @@
+@import '../../index.scss'; 
+$grass: '../../graphics/backgrounds/grass.png';
+$groundSign: '../../graphics/details/groundSign.png';
+
+footer {
+    height: 200px;
+    background-image: url($grass);
+    background-size: cover; 
+    background-position: 40% 95%;
+    align-items: center;
+}
+
+.logo {
+    height: 55px;
+    margin-top: 25px; 
+    border: solid 3px $signBrown; 
+}
+
+.ground-sign {
+    background-image: url($groundSign);
+    background-size: cover; 
+    @include centerColumn(start);
+    align-items: center;
+    height: 200px; 
+    width: 207px;
+}

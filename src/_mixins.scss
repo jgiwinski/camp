@@ -1,0 +1,23 @@
+@mixin centerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@mixin centerColumn($content) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $content;
+}
+
+@mixin boxShadow {
+    box-shadow: 0px 5px 13px 1px $darkGreen;
+}
+
+@mixin graphicPosition($height, $top, $lr, $side) {
+    height: $height;
+    position: absolute;
+    top: $top; 
+    #{$lr}: $side; 
+    filter: drop-shadow(5px 5px 5px black);
+}

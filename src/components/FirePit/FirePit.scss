@@ -1,0 +1,65 @@
+@import '../../index.scss'; 
+$headerBanner: '../../graphics/backgrounds/woodPointed.png';
+$fire: '../../graphics/details/Campfire-1.png'; 
+
+.fire-img {
+    height: 4rem; 
+}
+
+.camp-fire-box {
+    height: 250px;
+    width: 100%;
+    border-radius: 100px;
+    font-family: $special;
+    background-color: #dcba8670;
+    background-image: url($fire);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: 45px; 
+    @include centerColumn(space-evenly);
+    align-items: center;
+}
+
+ul {
+    columns: 2;
+    column-gap: 5em;
+    text-align: center;
+    padding: 0;
+    min-height: 110px;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px; 
+}
+
+.participants {
+    // @include centerColumn; 
+    // align-items: center;
+}
+
+.topic {
+    background: transparent;
+    background-image: url($headerBanner);
+    background-size: contain;
+    width: 210px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    color: $cream;
+    font-family: $special;
+    font-size: 20px;
+    &:hover {
+        cursor: pointer; 
+        transform-origin: center;
+        transform: scale(1.1);
+    }
+}
+
+.member-name {
+    // border-radius: 50px;
+    border-bottom: solid 3px $signBrown;
+    // background-color: $signBrown;
+    padding: 3px; 
+}

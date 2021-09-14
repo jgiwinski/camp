@@ -1,0 +1,69 @@
+@import '../../index.scss'; 
+$headerBanner: '../../graphics/backgrounds/woodPointed.png';
+
+header, footer {
+    @include centerRow; 
+    padding: 20px; 
+}
+
+.pine {
+    @include graphicPosition(7em, 10px, left, 310px);
+}
+
+.pine2 {
+    @include graphicPosition(5em, 48px, left, 289px);
+}
+
+.pine3 {
+    @include graphicPosition(7em, 20px, right, 307px);
+}
+
+.pine4 {
+    @include graphicPosition(5em, 53px, right, 283px)
+}
+
+.bear {
+    @include graphicPosition(2.5em, 90px, left, 360px)
+}
+
+h1 {
+    font-family: $special;
+    font-size: 3em;
+}
+
+.banner {
+    background-color: $mapLightest;
+    border-radius: 10px; 
+    @include centerRow; 
+    @include boxShadow; 
+    width: 50%;
+    padding: 20px;
+    color: $darkBrown; 
+}
+
+// 13 inch
+@media screen and (max-width: 1440px) {
+    
+    header {
+        background-color: red; 
+    }
+
+}
+
+// tablet
+@media screen and (max-width: 1100px) {
+  
+    header {
+        background-color: blue; 
+    }
+
+}
+
+// mobile
+@media screen and (max-width: 600px) {
+  
+    header {
+        background-color: purple; 
+    }
+
+}
